@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8187129B20B050CB0028D3BF /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129A20B050CB0028D3BF /* Plant.swift */; };
+		8187129D20B0545F0028D3BF /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */; };
+		818712A120B060090028D3BF /* PlantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818712A020B060090028D3BF /* PlantListViewController.swift */; };
 		81E9762020A7180E00CDB328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9761F20A7180E00CDB328 /* AppDelegate.swift */; };
 		81E9762220A7180E00CDB328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9762120A7180E00CDB328 /* ViewController.swift */; };
 		81E9762520A7180E00CDB328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E9762320A7180E00CDB328 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8187129A20B050CB0028D3BF /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		818712A020B060090028D3BF /* PlantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListViewController.swift; sourceTree = "<group>"; };
 		81E9761C20A7180E00CDB328 /* iOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E9761F20A7180E00CDB328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E9762120A7180E00CDB328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8187129920B050790028D3BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8187129A20B050CB0028D3BF /* Plant.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		81E9761320A7180D00CDB328 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,7 @@
 		81E9761E20A7180E00CDB328 /* iOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				8187129920B050790028D3BF /* Models */,
 				81E9761F20A7180E00CDB328 /* AppDelegate.swift */,
 				81E9762120A7180E00CDB328 /* ViewController.swift */,
 				81E9762320A7180E00CDB328 /* Main.storyboard */,
@@ -69,6 +84,8 @@
 				81E9762620A7180E00CDB328 /* iOSProject.xcdatamodeld */,
 				81E9763420A71CC200CDB328 /* LoginViewController.swift */,
 				81E9763620A71E6600CDB328 /* NewUserViewController.swift */,
+				8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */,
+				818712A020B060090028D3BF /* PlantListViewController.swift */,
 			);
 			path = iOSProject;
 			sourceTree = "<group>";
@@ -145,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8187129D20B0545F0028D3BF /* PlantCollectionViewCell.swift in Sources */,
 				81E9763520A71CC200CDB328 /* LoginViewController.swift in Sources */,
+				818712A120B060090028D3BF /* PlantListViewController.swift in Sources */,
+				8187129B20B050CB0028D3BF /* Plant.swift in Sources */,
 				81E9762220A7180E00CDB328 /* ViewController.swift in Sources */,
 				81E9763720A71E6600CDB328 /* NewUserViewController.swift in Sources */,
 				81E9762020A7180E00CDB328 /* AppDelegate.swift in Sources */,
@@ -311,6 +331,7 @@
 				81E9763320A7180E00CDB328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
