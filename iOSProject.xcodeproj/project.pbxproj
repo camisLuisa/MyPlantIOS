@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62158E7520B37FC300DBF47B /* PlantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62158E7420B37FC300DBF47B /* PlantRepository.swift */; };
 		8187129B20B050CB0028D3BF /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129A20B050CB0028D3BF /* Plant.swift */; };
 		8187129D20B0545F0028D3BF /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */; };
 		818712A120B060090028D3BF /* PlantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818712A020B060090028D3BF /* PlantListViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62158E7420B37FC300DBF47B /* PlantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRepository.swift; sourceTree = "<group>"; };
 		8187129A20B050CB0028D3BF /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
 		818712A020B060090028D3BF /* PlantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62158E7320B37F4D00DBF47B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				62158E7420B37FC300DBF47B /* PlantRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
 		8187129920B050790028D3BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 		81E9761E20A7180E00CDB328 /* iOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				62158E7320B37F4D00DBF47B /* Repository */,
 				8187129920B050790028D3BF /* Models */,
 				81E9761F20A7180E00CDB328 /* AppDelegate.swift */,
 				81E9762120A7180E00CDB328 /* ViewController.swift */,
@@ -167,6 +178,7 @@
 				818712A120B060090028D3BF /* PlantListViewController.swift in Sources */,
 				8187129B20B050CB0028D3BF /* Plant.swift in Sources */,
 				81E9762220A7180E00CDB328 /* ViewController.swift in Sources */,
+				62158E7520B37FC300DBF47B /* PlantRepository.swift in Sources */,
 				81E9763720A71E6600CDB328 /* NewUserViewController.swift in Sources */,
 				81E9762020A7180E00CDB328 /* AppDelegate.swift in Sources */,
 				81E9762820A7180E00CDB328 /* iOSProject.xcdatamodeld in Sources */,
