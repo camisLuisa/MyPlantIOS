@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62158E7520B37FC300DBF47B /* PlantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62158E7420B37FC300DBF47B /* PlantRepository.swift */; };
+		62A8F45320BE0A290070B52E /* NewPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8F45220BE0A290070B52E /* NewPlantViewController.swift */; };
 		8187129B20B050CB0028D3BF /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129A20B050CB0028D3BF /* Plant.swift */; };
 		8187129D20B0545F0028D3BF /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */; };
 		818712A120B060090028D3BF /* PlantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818712A020B060090028D3BF /* PlantListViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		62158E7420B37FC300DBF47B /* PlantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRepository.swift; sourceTree = "<group>"; };
+		62A8F45220BE0A290070B52E /* NewPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlantViewController.swift; sourceTree = "<group>"; };
 		8187129A20B050CB0028D3BF /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
 		818712A020B060090028D3BF /* PlantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantListViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				81E9763620A71E6600CDB328 /* NewUserViewController.swift */,
 				8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */,
 				818712A020B060090028D3BF /* PlantListViewController.swift */,
+				62A8F45220BE0A290070B52E /* NewPlantViewController.swift */,
 			);
 			path = iOSProject;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8187129D20B0545F0028D3BF /* PlantCollectionViewCell.swift in Sources */,
+				62A8F45320BE0A290070B52E /* NewPlantViewController.swift in Sources */,
 				81E9763520A71CC200CDB328 /* LoginViewController.swift in Sources */,
 				818712A120B060090028D3BF /* PlantListViewController.swift in Sources */,
 				8187129B20B050CB0028D3BF /* Plant.swift in Sources */,

@@ -12,7 +12,7 @@ class PlantListViewController: UIViewController, UICollectionViewDataSource, UIC
 
     @IBOutlet weak var plantCollectionView: UICollectionView!
     
-    private var plantList = Plant.createPlant()
+    private var plantList = PlantRepository.plantRep
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,8 @@ class PlantListViewController: UIViewController, UICollectionViewDataSource, UIC
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        print(plantList.count)
-        return plantList.count
+        print(plantList.qtdPlant)
+        return plantList.qtdPlant
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt: IndexPath) -> UICollectionViewCell {
@@ -39,9 +39,13 @@ class PlantListViewController: UIViewController, UICollectionViewDataSource, UIC
         
         var cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: cellForItemAt as IndexPath) as! PlantCollectionViewCell
         
-        cell.plant = self.plantList[cellForItemAt.item]
+        cell.plant = self.plantList.getPlant(index: cellForItemAt.item)
         
         return cell
+    }
+    
+    @IBAction func myUnwindAction(unwinSegue: UIStoryboardSegue) {
+        
     }
 }
     

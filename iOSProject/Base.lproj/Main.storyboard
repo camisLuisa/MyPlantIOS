@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xwg-SC-GmY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xwg-SC-GmY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="1596" y="419"/>
         </scene>
-        <!--View Controller-->
+        <!--New Plant View Controller-->
         <scene sceneID="4tQ-ag-J4O">
             <objects>
-                <viewController id="SdF-Z6-6OO" sceneMemberID="viewController">
+                <viewController id="SdF-Z6-6OO" customClass="NewPlantViewController" customModule="iOSProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q1z-GE-iBX"/>
                         <viewControllerLayoutGuide type="bottom" id="lAA-Gx-3EN"/>
@@ -153,6 +153,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-HD-pFH">
                                 <rect key="frame" x="164" y="368" width="46" height="30"/>
                                 <state key="normal" title="Salvar"/>
+                                <connections>
+                                    <action selector="createNewPlant:" destination="SdF-Z6-6OO" eventType="touchUpInside" id="PCn-Ch-4L2"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcR-dB-Xxl">
                                 <rect key="frame" x="101" y="99" width="235" height="30"/>
@@ -172,17 +175,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastro de Plantas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whV-WW-Obc">
-                                <rect key="frame" x="101" y="28" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZ0-kE-DWM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Owp-Qh-SyY">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="r0M-XT-PrC"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eC7-HD-pFH" firstAttribute="leading" secondItem="GOB-XX-LV1" secondAttribute="leadingMargin" constant="148" id="22p-Ci-cjP"/>
-                            <constraint firstItem="whV-WW-Obc" firstAttribute="top" secondItem="Q1z-GE-iBX" secondAttribute="bottom" constant="8" id="8Kv-Bb-UP1"/>
                             <constraint firstItem="eC7-HD-pFH" firstAttribute="top" secondItem="PiX-0V-NFT" secondAttribute="bottom" constant="110" id="B7c-p9-iHh"/>
                             <constraint firstItem="lAA-Gx-3EN" firstAttribute="top" secondItem="eC7-HD-pFH" secondAttribute="bottom" constant="269" id="BdL-AF-pd4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PiX-0V-NFT" secondAttribute="trailing" constant="23" id="ERf-02-sBg"/>
@@ -194,21 +199,23 @@
                             <constraint firstItem="PiX-0V-NFT" firstAttribute="top" secondItem="GdW-OK-vAQ" secondAttribute="bottom" constant="37" id="WGr-ZE-p33"/>
                             <constraint firstItem="GdW-OK-vAQ" firstAttribute="top" secondItem="kcR-dB-Xxl" secondAttribute="bottom" constant="32" id="gRq-O6-WXD"/>
                             <constraint firstItem="75K-s1-QOD" firstAttribute="top" secondItem="ujn-bw-ZhL" secondAttribute="bottom" constant="40" id="hd2-nK-0fI"/>
-                            <constraint firstItem="kcR-dB-Xxl" firstAttribute="top" secondItem="whV-WW-Obc" secondAttribute="bottom" constant="50" id="hjY-Fp-RJz"/>
                             <constraint firstItem="DsT-Th-E0H" firstAttribute="top" secondItem="Q1z-GE-iBX" secondAttribute="bottom" constant="88" id="htd-n2-nLI"/>
                             <constraint firstItem="ujn-bw-ZhL" firstAttribute="leading" secondItem="GOB-XX-LV1" secondAttribute="leadingMargin" id="i0p-1N-uD9"/>
                             <constraint firstItem="PiX-0V-NFT" firstAttribute="leading" secondItem="75K-s1-QOD" secondAttribute="trailing" constant="42" id="kyN-Tg-9Kp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="whV-WW-Obc" secondAttribute="trailing" constant="97" id="lRC-FX-0qh"/>
-                            <constraint firstItem="whV-WW-Obc" firstAttribute="leading" secondItem="GOB-XX-LV1" secondAttribute="leadingMargin" constant="85" id="m5k-Ai-Qk1"/>
                             <constraint firstItem="kcR-dB-Xxl" firstAttribute="leading" secondItem="DsT-Th-E0H" secondAttribute="trailing" constant="39" id="oD9-zH-aNP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eC7-HD-pFH" secondAttribute="trailing" constant="149" id="rFd-nN-TWM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kcR-dB-Xxl" secondAttribute="trailing" constant="23" id="uCW-kh-DzW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newPlantAgeText" destination="PiX-0V-NFT" id="yMK-FR-0Y3"/>
+                        <outlet property="newPlantNameText" destination="kcR-dB-Xxl" id="7mu-zV-8ks"/>
+                        <outlet property="newPlantSpeciesText" destination="GdW-OK-vAQ" id="FHQ-st-6W9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lDg-jB-rQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2413.5999999999999" y="435.83208395802103"/>
+            <point key="canvasLocation" x="2446" y="505"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="0rF-OB-jon">
