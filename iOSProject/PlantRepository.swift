@@ -20,9 +20,9 @@ class PlantRepository {
         self.qtdPlant = qtdPlant + 1
     }
     
-    public func deletePlant(plantName : String){
-        plantList.remove(at: getPlant(plantName: plantName))
-    }
+   // public func deletePlant(plantName : String){
+      //  plantList.remove(at: getPlant(plantName: plantName))
+    //}
     
     public func findPlantByName(plantName : String) -> Plant{
         let plantFilter = plantList.filter { (plant : Plant) -> Bool in
@@ -32,15 +32,11 @@ class PlantRepository {
     }
     
     public func getPlant(index : Int) -> Plant {
-        var plant : Plant = Plant(name : "", especie : "", idade: 0)
-        if(index >= qtdPlant){
-            plant = plantList[index]
-        }
         
-        return plant
+        return plantList[index]
     }
     
-    public func getPlant(plantName : String) -> Int {
+    public func getPlant(plantName : String, callback:@escaping (_ result: Any?) -> Void) -> Int {
         var position : Int = 0
         for index in 0...qtdPlant {
             if(plantList[index].name == plantName){

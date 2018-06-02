@@ -14,6 +14,8 @@ class PlantListViewController: UIViewController, UICollectionViewDataSource, UIC
     
     private var plantList = PlantRepository.plantRep
     
+    var plantRow : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.plantCollectionView.delegate = self
@@ -37,7 +39,7 @@ class PlantListViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let cellIdentifier = "PlantCell"
         
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: cellForItemAt as IndexPath) as! PlantCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: cellForItemAt as IndexPath) as! PlantCollectionViewCell
         
         cell.plant = self.plantList.getPlant(index: cellForItemAt.item)
         
@@ -46,6 +48,21 @@ class PlantListViewController: UIViewController, UICollectionViewDataSource, UIC
     
     @IBAction func myUnwindAction(unwinSegue: UIStoryboardSegue) {
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let collectionViewStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewController = collectionViewStoryBoard.instantiateViewController(withIdentifier: "plantInfo") as! MyPlantInfoViewController
+        print(plantList.getPlant(index: indexPath.item).name)
+        viewController.newPlantName = plantList.getPlant(index: indexPath.item).name
+        viewController.newPlantSpecies = plantList.getPlant(index: indexPath.item).especie
+        viewController.newPlantAge = String(plantList.getPlant(index: indexPath.item).especie)
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.plantCollectionView.reloadData()
     }
 }
     

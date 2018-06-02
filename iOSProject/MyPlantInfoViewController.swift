@@ -1,46 +1,45 @@
 //
-//  NewPlantViewController.swift
+//  MyPlantInfoViewController.swift
 //  iOSProject
 //
-//  Created by Camila Luísa Farias on 29/05/18.
+//  Created by Treinamento on 02/06/2018.
 //  Copyright © 2018 Treinamento. All rights reserved.
 //
 
 import UIKit
 
-class NewPlantViewController: ViewController {
-
-    @IBOutlet weak var newPlantNameText: UITextField!
-    @IBOutlet weak var newPlantSpeciesText: UITextField!
-    @IBOutlet weak var newPlantAgeText: UITextField!
+class MyPlantInfoViewController: ViewController {
     
     var newPlantName : String = ""
     var newPlantSpecies : String = ""
-    var newPlantAge : Int = 0
-    
+    var newPlantAge : String = ""
     var repPlant = PlantRepository.plantRep
-    
+    var plantRow : Int = 0
+
+    @IBOutlet weak var plantNameInfo: UILabel!
+    @IBOutlet weak var plantSpeciesInfo: UILabel!
+    @IBOutlet weak var plantAgeInfo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      //  var plant1 = repPlant.getPlant(index: plantRow)
+        plantNameInfo.text = newPlantName
+        plantSpeciesInfo.text = newPlantSpecies
+        plantAgeInfo.text = newPlantAge
+        
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+   }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.reloadInputViews()
     }
     
-    @IBAction func createNewPlant(_ sender: Any) {
-        newPlantName = newPlantNameText.text!
-        newPlantSpecies = newPlantSpeciesText.text!
-        let plant = Plant(name: newPlantName,especie: newPlantSpecies,idade: newPlantAge)
-        repPlant.addPlant(newPlant: plant)
-        print(repPlant.plantExist(plantName: plant.name))
-    }
-    
-    
+
     /*
     // MARK: - Navigation
 
