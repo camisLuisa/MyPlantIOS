@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xwg-SC-GmY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xwg-SC-GmY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Noteworthy.ttc">
+            <string>Noteworthy-Bold</string>
+            <string>Noteworthy-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Item 2-->
         <scene sceneID="eoU-Jq-rsw">
@@ -35,7 +41,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m29-Pm-mPY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m29-Pm-mPY">
                                 <rect key="frame" x="26" y="107" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -65,7 +71,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbj-eV-4RA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbj-eV-4RA">
                                 <rect key="frame" x="10" y="214" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -82,12 +88,14 @@
                             <constraint firstItem="G5o-fp-pbU" firstAttribute="top" secondItem="BRN-aR-Az5" secondAttribute="bottom" constant="320" id="EuX-Tl-YQo"/>
                             <constraint firstItem="sbj-eV-4RA" firstAttribute="leading" secondItem="Kxr-cQ-6Ns" secondAttribute="leading" constant="10" id="GoM-BO-KfW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SpL-wZ-4Z2" secondAttribute="trailing" constant="54" id="K3v-pv-9z3"/>
+                            <constraint firstItem="m29-Pm-mPY" firstAttribute="top" secondItem="wve-fk-ynu" secondAttribute="bottom" constant="87" id="MdD-NL-WD0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BRN-aR-Az5" secondAttribute="trailing" constant="54" id="NFg-ci-mxg"/>
                             <constraint firstItem="SpL-wZ-4Z2" firstAttribute="leading" secondItem="m29-Pm-mPY" secondAttribute="trailing" constant="42" id="Oir-vD-DAT"/>
                             <constraint firstItem="SpL-wZ-4Z2" firstAttribute="top" secondItem="RvU-E6-Rdq" secondAttribute="bottom" constant="48" id="Qf2-Cl-Vw1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RvU-E6-Rdq" secondAttribute="trailing" constant="120" id="b93-0y-SR1"/>
                             <constraint firstItem="KrS-cO-5ZA" firstAttribute="leading" secondItem="EeY-7q-9Q8" secondAttribute="trailing" constant="39" id="bCl-Vv-aBn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KrS-cO-5ZA" secondAttribute="trailing" constant="54" id="kVC-YC-59p"/>
+                            <constraint firstItem="63x-3m-Dco" firstAttribute="top" secondItem="sbj-eV-4RA" secondAttribute="bottom" constant="383" id="lwo-I5-9Er"/>
                             <constraint firstItem="EeY-7q-9Q8" firstAttribute="leading" secondItem="Kxr-cQ-6Ns" secondAttribute="leading" constant="10" id="xMU-0x-hN3"/>
                         </constraints>
                     </view>
@@ -219,23 +227,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-Ch-uGV">
-                                <rect key="frame" x="16" y="67" width="46" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z2-iV-I60">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z2-iV-I60">
                                 <rect key="frame" x="16" y="137" width="48" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k61-LB-Idt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k61-LB-Idt">
                                 <rect key="frame" x="72" y="134" width="235" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -246,50 +245,77 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDm-fa-m7r">
-                                <rect key="frame" x="145" y="483" width="85" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MyPlant"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDm-fa-m7r">
+                                <rect key="frame" x="137" y="459" width="109" height="54"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.58039215686274503" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
+                                <state key="normal" title="MyPlant">
+                                    <color key="titleColor" red="0.2196078431372549" green="0.20000000000000001" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loginAction:" destination="NQQ-sh-cw1" eventType="touchUpInside" id="Dco-mE-7r5"/>
                                     <segue destination="NVu-n7-BSz" kind="show" id="Upe-w1-5uI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xac-qn-5BC">
-                                <rect key="frame" x="67" y="313" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="folha2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Xac-qn-5BC">
+                                <rect key="frame" x="89" y="320" width="205" height="131"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCk-FS-fVC">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCk-FS-fVC">
                                 <rect key="frame" x="75" y="81" width="232" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-Ch-uGV">
+                                <rect key="frame" x="16" y="81" width="46" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.5912964664" green="1" blue="0.49658515409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8Z2-iV-I60" firstAttribute="leading" secondItem="WfX-25-c6H" secondAttribute="leadingMargin" id="19i-wd-Hii"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k61-LB-Idt" secondAttribute="trailing" constant="52" id="2mN-z6-zBY"/>
+                            <constraint firstItem="XOd-Ch-uGV" firstAttribute="leading" secondItem="WfX-25-c6H" secondAttribute="leadingMargin" id="5xM-gS-tZd"/>
+                            <constraint firstItem="Xac-qn-5BC" firstAttribute="leading" secondItem="WfX-25-c6H" secondAttribute="leadingMargin" constant="73" id="6Xu-xo-7bs"/>
                             <constraint firstItem="Dzl-0g-iNm" firstAttribute="top" secondItem="sCi-LZ-efa" secondAttribute="bottom" constant="15" id="8id-N1-yti"/>
+                            <constraint firstItem="sDm-fa-m7r" firstAttribute="top" secondItem="Xac-qn-5BC" secondAttribute="bottom" constant="8" id="Bet-ce-zIT"/>
+                            <constraint firstItem="sDm-fa-m7r" firstAttribute="top" secondItem="Xac-qn-5BC" secondAttribute="bottom" constant="8" id="EBj-m6-ueS"/>
+                            <constraint firstItem="k61-LB-Idt" firstAttribute="leading" secondItem="8Z2-iV-I60" secondAttribute="trailing" constant="8" id="FjI-ch-BTI"/>
+                            <constraint firstItem="k61-LB-Idt" firstAttribute="top" secondItem="MCk-FS-fVC" secondAttribute="bottom" constant="23" id="Gyd-a2-4Eq"/>
+                            <constraint firstItem="MCk-FS-fVC" firstAttribute="top" secondItem="Dzl-0g-iNm" secondAttribute="bottom" constant="25" id="HDJ-Po-osn"/>
+                            <constraint firstItem="9n1-qy-aR4" firstAttribute="top" secondItem="sDm-fa-m7r" secondAttribute="bottom" constant="105" id="Mye-yS-Zi7"/>
                             <constraint firstItem="Dzl-0g-iNm" firstAttribute="leading" secondItem="WfX-25-c6H" secondAttribute="leadingMargin" constant="150" id="N1h-Jl-Xgs"/>
+                            <constraint firstItem="MCk-FS-fVC" firstAttribute="leading" secondItem="XOd-Ch-uGV" secondAttribute="trailing" constant="13" id="REc-Il-1fy"/>
+                            <constraint firstItem="XOd-Ch-uGV" firstAttribute="top" secondItem="sCi-LZ-efa" secondAttribute="bottom" constant="61" id="XKh-AK-Yvr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MCk-FS-fVC" secondAttribute="trailing" constant="52" id="aHV-pz-QuY"/>
+                            <constraint firstItem="Xac-qn-5BC" firstAttribute="top" secondItem="k61-LB-Idt" secondAttribute="bottom" constant="156" id="fcp-DZ-RUS"/>
+                            <constraint firstItem="sDm-fa-m7r" firstAttribute="leading" secondItem="WfX-25-c6H" secondAttribute="leadingMargin" constant="121" id="mEw-zL-cBz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sDm-fa-m7r" secondAttribute="trailing" constant="113" id="qJU-sa-sti"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dzl-0g-iNm" secondAttribute="trailing" constant="151" id="tBp-hj-pFr"/>
+                            <constraint firstItem="sDm-fa-m7r" firstAttribute="top" secondItem="Xac-qn-5BC" secondAttribute="bottom" constant="8" id="vhP-93-xKq"/>
+                            <constraint firstItem="8Z2-iV-I60" firstAttribute="top" secondItem="XOd-Ch-uGV" secondAttribute="bottom" constant="35.5" id="x8r-WN-fpe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xac-qn-5BC" secondAttribute="trailing" constant="65" id="xWM-qN-fVv"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="h4B-uC-p5F"/>
                     <connections>
+                        <outlet property="logo" destination="Xac-qn-5BC" id="6po-qi-WDQ"/>
                         <outlet property="password" destination="k61-LB-Idt" id="o5c-Pg-0mc"/>
                         <outlet property="userName" destination="MCk-FS-fVC" id="gMB-41-PgH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAr-eg-riT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-503" y="-293"/>
+            <point key="canvasLocation" x="-503.19999999999999" y="-293.70314842578711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JfN-wt-z5o">
             <objects>
                 <navigationController id="NVu-n7-BSz" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qPT-AV-J5v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -312,14 +338,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="370-JN-vZd">
-                                <rect key="frame" x="26" y="128" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="minhas plantas"/>
-                                <connections>
-                                    <segue destination="8lI-as-bBI" kind="show" id="Po7-sd-WE5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTH-Dd-ScV">
                                 <rect key="frame" x="251" y="128" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -332,8 +350,19 @@
                                     <navigationItem title="My Plant" id="e6T-2S-Cip"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="370-JN-vZd">
+                                <rect key="frame" x="16" y="128" width="166" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                <state key="normal" title="minhas plantas">
+                                    <color key="titleColor" red="0.2196078431372549" green="0.20000000000000001" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8lI-as-bBI" kind="show" id="Po7-sd-WE5"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.6195145845413208" green="0.90913933515548706" blue="0.34874829649925232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.58039215686274503" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="uib-81-pv2"/>
@@ -341,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GD0-Ml-D0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="-294"/>
+            <point key="canvasLocation" x="1348" y="-294.60269865067471"/>
         </scene>
         <!--Plant List View Controller-->
         <scene sceneID="bzH-z6-deB">
@@ -520,4 +549,7 @@
             <point key="canvasLocation" x="-1314" y="65"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="folha2.jpg" width="400" height="300"/>
+    </resources>
 </document>

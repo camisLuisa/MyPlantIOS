@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		62158E7520B37FC300DBF47B /* PlantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62158E7420B37FC300DBF47B /* PlantRepository.swift */; };
+		621BCB4620D2A8A4008B4C1D /* MyPlantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621BCB4520D2A8A4008B4C1D /* MyPlantInfoViewController.swift */; };
+		6221DC2820D309D60072F3A7 /* folha2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6221DC2720D309D60072F3A7 /* folha2.jpg */; };
 		62A8F45320BE0A290070B52E /* NewPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8F45220BE0A290070B52E /* NewPlantViewController.swift */; };
 		8187129B20B050CB0028D3BF /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129A20B050CB0028D3BF /* Plant.swift */; };
 		8187129D20B0545F0028D3BF /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		62158E7420B37FC300DBF47B /* PlantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRepository.swift; sourceTree = "<group>"; };
+		621BCB4520D2A8A4008B4C1D /* MyPlantInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlantInfoViewController.swift; sourceTree = "<group>"; };
+		6221DC2720D309D60072F3A7 /* folha2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = folha2.jpg; sourceTree = "<group>"; };
 		62A8F45220BE0A290070B52E /* NewPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlantViewController.swift; sourceTree = "<group>"; };
 		8187129A20B050CB0028D3BF /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		8187129C20B0545F0028D3BF /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 		81E9761E20A7180E00CDB328 /* iOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				6221DC2720D309D60072F3A7 /* folha2.jpg */,
+				621BCB4520D2A8A4008B4C1D /* MyPlantInfoViewController.swift */,
 				62158E7320B37F4D00DBF47B /* Repository */,
 				8187129920B050790028D3BF /* Models */,
 				81E9761F20A7180E00CDB328 /* AppDelegate.swift */,
@@ -164,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E9762D20A7180E00CDB328 /* LaunchScreen.storyboard in Resources */,
+				6221DC2820D309D60072F3A7 /* folha2.jpg in Resources */,
 				81E9762A20A7180E00CDB328 /* Assets.xcassets in Resources */,
 				81E9762520A7180E00CDB328 /* Main.storyboard in Resources */,
 			);
@@ -180,6 +187,7 @@
 				62A8F45320BE0A290070B52E /* NewPlantViewController.swift in Sources */,
 				81E9763520A71CC200CDB328 /* LoginViewController.swift in Sources */,
 				818712A120B060090028D3BF /* PlantListViewController.swift in Sources */,
+				621BCB4620D2A8A4008B4C1D /* MyPlantInfoViewController.swift in Sources */,
 				8187129B20B050CB0028D3BF /* Plant.swift in Sources */,
 				81E9762220A7180E00CDB328 /* ViewController.swift in Sources */,
 				62158E7520B37FC300DBF47B /* PlantRepository.swift in Sources */,
